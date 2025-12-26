@@ -11,7 +11,12 @@ const PostListPresenter = ({ posts }) => {
           {posts.map((post) => (
             <li key={post.id} className="post-card">
               <h3>{post.title}</h3>
-              <p>{post.content.substring(0, 150)}...</p>
+              <p>
+                {post.content
+                  ? post.content.substring(0, 150)
+                  : "No content available"}
+                ...
+              </p>
               <span className="post-date">
                 {new Date(post.date).toLocaleDateString()}
               </span>

@@ -9,7 +9,14 @@ const ProfileHeaderPresenter = ({
 }) => {
   return (
     <div className="profile-header">
-      <img src={user.avatar} alt={user.name} className="avatar" />
+      <div
+        style={{
+          width: "120px",
+          height: "120px",
+          borderRadius: "50%",
+          backgroundColor: "#ccc",
+        }}
+      ></div>
       {!isEditing ? (
         <div className="profile-info">
           <h1>{user.name}</h1>

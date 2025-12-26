@@ -15,6 +15,15 @@ const UserProfilePresenter = ({
   const [isEditing, setIsEditing] = useState(false);
   const [formData, setFormData] = useState({});
 
+  const handleStartEditing = () => {
+    setFormData({
+      name: user.name,
+      email: user.email,
+      bio: user.bio,
+    });
+    setIsEditing(true);
+  };
+
   const handleSaveProfile = async () => {
     const result = await onUpdateUser(formData);
     console.log("Update Result:", result);
@@ -22,11 +31,7 @@ const UserProfilePresenter = ({
 
   const handleCancelEditing = () => {
     setIsEditing(false);
-    setFormData({
-      name: user.name,
-      email: user.email,
-      bio: user.bio,
-    });
+    setFormData({});
   };
 
   const handleInputChange = (field, value) => {
@@ -43,13 +48,17 @@ const UserProfilePresenter = ({
     return <ErrorPresenterCommon message={error} onRetry={onRetry} />;
   }
 
+  if (!user) {
+    return <LoadingPresenterCommon message="Loading user data..." />;
+  }
+
   return (
     <div className="user-profile">
       <ProfileHeaderPresenter
         user={user}
         isEditing={isEditing}
         formData={formData}
-        onStartEditing={() => setIsEditing(true)}
+        onStartEditing={handleStartEditing}
         onInputChange={handleInputChange}
         onCancelEditing={handleCancelEditing}
         onSaveProfile={handleSaveProfile}

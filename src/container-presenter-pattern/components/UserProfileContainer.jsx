@@ -19,6 +19,7 @@ const UserProfileContainer = ({ userId }) => {
       const response = await axios.get(
         `${import.meta.env.VITE_API_BASE_URL}/users/${userId}`
       );
+      console.log(response.data);
       setUser(response.data);
     } catch (error) {
       setError("Failed to fetch user data", error);
