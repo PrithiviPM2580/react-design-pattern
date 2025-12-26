@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import UserProfilePresenter from "./UserProfilePresenter";
+import "../index.css";
 
 const UserProfileContainer = ({ userId }) => {
   const [user, setUser] = useState(null);

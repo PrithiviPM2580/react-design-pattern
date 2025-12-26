@@ -1,9 +1,9 @@
-import UserProfileContainer from "./container-presenter-pattern/components/UserProfileContainer";
+import ControlledFeedbackForm from "./controlled-uncontrolled-pattern/components/ControlledFeedbackForm";
 
 const App = () => {
   return (
     <div>
-      <UserProfileContainer userId={1} />
+      <ControlledFeedbackForm />
     </div>
   );
 };
