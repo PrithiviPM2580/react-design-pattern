@@ -1,9 +1,8 @@
-import ControlledFeedbackForm from "./controlled-uncontrolled-pattern/components/ControlledFeedbackForm";
-
+import UnControlledFeedbackForm from "./controlled-uncontrolled-pattern/components/UnControlledFeedbackForm";
 const App = () => {
   return (
     <div>
-      <ControlledFeedbackForm />
+      <UnControlledFeedbackForm />
     </div>
   );
 };
