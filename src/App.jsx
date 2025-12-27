@@ -1,10 +1,6 @@
-import UnControlledFeedbackForm from "./controlled-uncontrolled-pattern/components/UnControlledFeedbackForm";
+import CompoundComponen from "./compound-components-pattern/components/CompoundComponen";
 const App = () => {
-  return (
-    <div>
-      <UnControlledFeedbackForm />
-    </div>
-  );
+  return <CompoundComponen />;
 };
 
 export default App;
