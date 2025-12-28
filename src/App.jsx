@@ -1,6 +1,7 @@
-import CompoundComponen from "./compound-components-pattern/components/CompoundComponen";
+import RenderProp from "./render-props-pattern/components/RenderProp";
+
 const App = () => {
-  return <CompoundComponen />;
+  return <RenderProp />;
 };
 
 export default App;
