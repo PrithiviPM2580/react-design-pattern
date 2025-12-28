@@ -1,7 +1,8 @@
-import RenderProp from "./render-props-pattern/components/RenderProp";
+import PostHOC from "./higher-order-function-pattern/components/PostHOC";
 
+PostHOC;
 const App = () => {
-  return <RenderProp />;
+  return <PostHOC />;
 };
 
 export default App;
