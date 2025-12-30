@@ -1,8 +1,7 @@
-import PostHOC from "./higher-order-function-pattern/components/PostHOC";
+import LikeButton from "./optimistic-ui-pattern/components/LikeButton";
 
-PostHOC;
 const App = () => {
-  return <PostHOC />;
+  return <LikeButton postId={123} />;
 };
 
 export default App;
