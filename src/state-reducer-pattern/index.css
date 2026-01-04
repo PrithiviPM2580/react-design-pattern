@@ -17,4 +17,8 @@ button {
   padding: 1em 3em;
   font-size: 1.2rem;
   cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  color: #fff;
 }

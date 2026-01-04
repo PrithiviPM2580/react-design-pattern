@@ -7,3 +7,14 @@ export function toogleReducer(state, action) {
       };
   }
 }
+
+export function customToogleReducer(state, action) {
+  switch (action.type) {
+    case "toggle":
+      if (state.clicks >= 3) return state;
+      return {
+        on: !state.on,
+        clicks: state.clicks++,
+      };
+  }
+}
