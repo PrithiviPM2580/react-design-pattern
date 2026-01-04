@@ -1,7 +1,6 @@
-import LikeButton from "./optimistic-ui-pattern/components/LikeButton";
-
+import Toogle from "./state-reducer-pattern/components/Toogle";
 const App = () => {
-  return <LikeButton postId={123} />;
+  return <Toogle />;
 };
 
 export default App;
