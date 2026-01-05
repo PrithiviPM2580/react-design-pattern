@@ -1,5 +1,6 @@
 import { useState } from "react";
 import MemoizedCard from "./ProfileTracker";
+import "../index.css";
 
 const MemoziedProfileTracker = () => {
   const [value, setValue] = useState("");

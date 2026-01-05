@@ -1,10 +1,8 @@
-import AddToCart from "./pub-sub-observer-pattern/components/AddToCart";
-import CartBadge from "./pub-sub-observer-pattern/components/CartBadge";
+import MemoziedProfileTracker from "./performance-pattern/memoziation/components/MemoziedProfileTracker";
 const App = () => {
   return (
     <>
-      <AddToCart />
-      <CartBadge />
+      <MemoziedProfileTracker />
     </>
   );
 };
