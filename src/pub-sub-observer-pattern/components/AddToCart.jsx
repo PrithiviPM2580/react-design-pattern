@@ -17,7 +17,7 @@ const AddToCart = () => {
     });
   };
   return (
-    <div>
+    <div className="add-to-cart">
       <h2>Publisher</h2>
       <button onClick={handleClick}>Add To Cart</button>
     </div>

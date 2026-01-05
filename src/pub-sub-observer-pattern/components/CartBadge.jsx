@@ -7,7 +7,7 @@ const CartBadge = () => {
     setItems((prevItems) => [...prevItems, data]);
   });
   return (
-    <div>
+    <div className="cart-badge">
       <h2>Subscriber</h2>
       <div>
         Cart Items: {items.length}
