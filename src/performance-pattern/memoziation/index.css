@@ -1,0 +1,39 @@
+/* Card-like styling for memoized profile tracker */
+.profile-tracker {
+  display: inline-block;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #f7f9fb, #e9eef5);
+  border: 1px solid #d1d9e6;
+  border-radius: 10px;
+  color: #243b53;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(36, 59, 83, 0.12);
+}
+
+/* Layout for memoized profile tracker example */
+.memoized-profile-tracker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  background: #f5f7fb;
+  border: 1px solid #e0e6f1;
+  border-radius: 12px;
+}
+
+.memoized-profile-tracker .profile-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #c9d5e5;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #1f2d3d;
+  font-size: 0.95rem;
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.memoized-profile-tracker .profile-input:focus {
+  outline: none;
+  border-color: #4c6fff;
+  box-shadow: 0 0 0 3px rgba(76, 111, 255, 0.15);
+}
