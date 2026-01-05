@@ -1,3 +1,5 @@
+import { crossTabChannel } from "./broadcast";
+
 const listeners = new Map();
 
 const eventBus = {
@@ -12,8 +14,12 @@ const eventBus = {
       listeners.get(eventName)?.delete(handler);
     };
   },
-  publish(eventName, payload) {
+  publish(eventName, payload, { broadcast = true } = {}) {
     listeners.get(eventName)?.forEach((handler) => handler(payload));
+
+    if (broadcast) {
+      crossTabChannel.postMessage({ eventName, payload });
+    }
   },
 };
 
