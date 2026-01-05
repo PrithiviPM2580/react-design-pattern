@@ -1,10 +1,10 @@
-import Toogle from "./state-reducer-pattern/components/Toogle";
-import { customToogleReducer } from "./state-reducer-pattern/components/toogle-reducer";
+import AddToCart from "./pub-sub-observer-pattern/components/AddToCart";
+import CartBadge from "./pub-sub-observer-pattern/components/CartBadge";
 const App = () => {
   return (
     <>
-      <Toogle />
-      <Toogle reducer={customToogleReducer} />
+      <AddToCart />
+      <CartBadge />
     </>
   );
 };
