@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useEvent } from "../useEvent";
+import "../index.css";
 
 const CartBadge = () => {
   const [items, setItems] = useState([]);
